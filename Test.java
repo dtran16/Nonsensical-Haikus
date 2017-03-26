@@ -11,14 +11,10 @@ public class Test extends JFrame implements ActionListener{
 		setSize(500, 500);
 	}
 	public void start(){
-		try{
 		frame = new Test();
 		frame.show();
 		Gen g = new Gen();
 		g.generate();
-		JLabel back = (new JLabel(new ImageIcon(ImageIO.read(new File("peaceful.jpg")))));
-		back.setOpaque(false);
-		frame.setContentPane(back);
 		button = new JButton("Click here to generate another Haiku!");
 		JPanel panel = new JPanel();
 		panel.setOpaque(false);
@@ -30,10 +26,6 @@ public class Test extends JFrame implements ActionListener{
 		button.setVerticalAlignment(JLabel.TOP);
 		j1.setVerticalAlignment(JLabel.TOP);
 		frame.setVisible(true);
-		}
-		catch(Exception e){
-			System.out.println(e.getMessage());
-		}
 		
 		
 	}
