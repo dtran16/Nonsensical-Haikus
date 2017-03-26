@@ -17,12 +17,12 @@ public class Test extends JFrame implements ActionListener{
 		g.generate();
 		button = new JButton("Click here to generate another Haiku!");
 		JPanel panel = new JPanel();
-		panel.setOpaque(false);
 		JLabel j1 = new JLabel("<html>"  +  "<br>" +  "<br>" +  "<br>" +  "<br>" +  "<br>" +  "<br>" +  "<br>" +  "<br>" +  "<br>" + "Beautiful Haiku:" + "<br>" + g.getLine1() +  "<br>" + g.getLine2() + "<br>"  + g.getLine3() + "</html>");
 		button.addActionListener(this);
 		frame.add(panel);
 		panel.add(button);
 		panel.add(j1);
+		panel.setBackground(Color.GREEN);
 		button.setVerticalAlignment(JLabel.TOP);
 		j1.setVerticalAlignment(JLabel.TOP);
 		frame.setVisible(true);
